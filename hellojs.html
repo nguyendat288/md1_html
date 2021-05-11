@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id ="mouse" onclick="do_something()">let get a idea</p>
+<h1 id =demo>hello</h1>
+
+<h2 onclick="alert('do something')"> thu </h2>
+<script>
+    var mouse = document.getElementById("mouse");
+mouse.addEventListener("mouseover",mouseover);
+mouse.addEventListener("mouseout",mouseout);
+
+
+function mouseover()
+{
+    document.getElementById("mouse").style.color = "red";
+}
+function mouseout(){
+    document.getElementById("mouse").style.color ="black";
+}
+</script>
+</body>
+</html>
+<script>
+    var demo = document.getElementById("demo");
+    demo.addEventListener("click",clickfunction);
+    function clickfunction(){
+        alert("xin chao");
+    }
+    function do_something() {
+        alert("hello world");
+    }
+
+</script>

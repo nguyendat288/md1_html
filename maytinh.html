@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính</title>
+</head>
+<body>
+<h1>Caculator</h1><br>
+<input type="number" id ="a" width="50px">
+<input type="number" id ="b" width="50px"> <br>
+<button onclick="add();" id="d1">Addition(+)</button>
+
+<button onclick="sub();"id="d2">Subtraction(-)</button>
+
+<button onclick="mul();"id="d3">Multiplication(*)</button>
+
+<button  onclick="div();"id="d4">Division(/)</button>
+<br>
+<p id ="c">Result : </p>
+<script>
+
+
+function add(){
+  let a = +document.getElementById('a').value;
+  let b = +document.getElementById('b').value;
+  document.getElementById("c").innerHTML += a+b;
+}
+function sub(){
+  let a = +document.getElementById('a').value;
+  let b = +document.getElementById('b').value;
+  document.getElementById("c").innerHTML += a-b;
+}
+function mul(){
+  let a = +document.getElementById('a').value;
+  let b = +document.getElementById('b').value;
+  document.getElementById("c").innerHTML += a*b;
+}
+function div(){
+  let a = +document.getElementById('a').value;
+  let b = +document.getElementById('b').value;
+  document.getElementById("c").innerHTML += a/b;
+}
+
+
+</script>
+</body>
+</html>

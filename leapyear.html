@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check năm nhuận</title>
+</head>
+<body>
+<script>
+  let inputa=prompt("nhập năm : ");
+  let a = parseInt(inputa);
+  if(a%4==0 &&a%100!=0||a%100==0&&a%400==0){
+    document.writeln("đây là năm nhuận");
+  }
+  else  document.writeln("đây là năm không nhuận");
+</script>
+</body>
+</html>

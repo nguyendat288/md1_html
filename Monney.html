@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển tiền</title>
+    <style>
+        .a{
+           color: #00FFFF;
+        }
+        .b{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<table width="100%">
+<form action="">
+
+   <tr>
+       <td width="25%">
+  <h2>Amount</h2>
+      </td>
+    <td width="25%">
+    <h2>From Currency</h2>
+    </td>
+
+    <td width="25%">
+        <h2> To Currency</h2>
+
+    </td>
+    <td width="25%"></td>
+   </tr>
+
+    <tr>
+<td>  <input id="b" type="number" value="">
+</td>
+        <td><select name="" id="c1">
+            <option value="VN">Viet Nam</option>
+            <option  value="USD">USD</option>
+        </select></td>
+        <td> <select name="" id="c2">
+            <option  value="USD">USD</option>
+            <option  value="VN">Viet Nam</option>
+        </select></td>
+        <td class="a"><button type="button" onclick="showMessage();">Convert</button>
+
+            <script>
+                function showMessage(){
+                    let a = document.getElementById('b').value;
+                    let select1 = document.getElementById('c1').value;
+                    let select2 = document.getElementById('c2').value;
+
+                if(select1==select2)
+                    document.getElementById("d").innerHTML+= a;
+                if(select1=="VN"&&select2=="USD")
+                    document.getElementById("d").innerHTML+= a/23000;
+                    if(select1=="USD"&&select2=="VN")
+                        document.getElementById("d").innerHTML+= a*23000;
+                }
+
+            </script></td>
+
+    </tr>
+    <tr>
+        <td class="b"><p id="d">Ket qua la : </p></td>
+    </tr>
+</table>
+
+
+</form>
+</body>
+</html>

@@ -8,8 +8,9 @@
 <script>
   let inputweight = prompt('Enter weight = ');
   let inputheight = prompt('Enter height = ');
-let weight =parseInt("inputweight");
-let height =parseInt("inputheight");
+let weight =parseFloat(inputweight);
+let height =parseFloat(inputheight);
+debugger
 let bmi = weight / ( height * height );
   if (bmi < 18)
     document.write("Underweight");

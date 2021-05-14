@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>puzzel</title>
+</head>
+<body>
+
+<img src="gai.jpg" height="250" width="200" id="a" onclick="anha()" />
+
+<img src="gaixinh.png" height="250" width="200" id="b" onclick="anhb()"/>
+
+<script>
+    function anha(){
+    let anh1 = document.getElementById('a').src;
+    let anh2 = document.getElementById('b').src;
+    if(anh1 == 'http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg'){
+        document.getElementById('a').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gaixinh.png';
+    }
+    else document.getElementById('a').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg';
+
+    }
+    function anhb(){
+        let anh1 = document.getElementById('a').src;
+        let anh2 = document.getElementById('b').src;
+        if(anh1 == 'http://localhost:63342/lap%20trinh%20Westorm/js/gaixinh.png'){
+            document.getElementById('b').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg';
+        }
+        else document.getElementById('b').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gaixinh.png';
+    }
+</script>
+</body>
+</html>

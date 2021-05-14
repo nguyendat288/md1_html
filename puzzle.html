@@ -11,14 +11,16 @@
 <img src="gaixinh.png" height="250" width="200" id="b" onclick="anhb()"/>
 
 <script>
-    function anha(){
-    let anh1 = document.getElementById('a').src;
-    let anh2 = document.getElementById('b').src;
-    if(anh1 == 'http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg'){
-        document.getElementById('a').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gaixinh.png';
-    }
-    else document.getElementById('a').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg';
+    function anha() {
+        let anh1 = document.getElementById('a').src;
+        let anh2 = document.getElementById('b').src;
+        if (anh1 == 'http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg') {
+            document.getElementById('a').src = 'http://localhost:63342/lap%20trinh%20Westorm/js/gaixinh.png';
+        } else {
+            document.getElementById('a').src = 'http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg';
 
+        }
+        if(anh1==anh2 )  console.log("you win");
     }
     function anhb(){
         let anh1 = document.getElementById('a').src;
@@ -27,7 +29,9 @@
             document.getElementById('b').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gai.jpg';
         }
         else document.getElementById('b').src ='http://localhost:63342/lap%20trinh%20Westorm/js/gaixinh.png';
+        if(anh1==anh2 ) console.log("you win");
     }
+
 </script>
 </body>
 </html>

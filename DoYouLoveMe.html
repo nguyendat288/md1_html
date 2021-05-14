@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+  <style>
+    .a{
+      color: pink;
+    }
+    .b{
+      color: red;
+    }
+    .c{
+      color: #00FFFF;
+    }
+  </style>
+</head>
+<body>
+<center>
+<H1 class="a">DO YOU LOVE ME ?</H1>
+
+<input class="b" type="button" value="Yes" onclick="alert('<3')">        <input id="d" class="c" type="button" value="No" style="position: absolute" onmouseover="b()">
+
+
+  </center>
+<script>
+  function b(){
+let x= Math.floor(Math.random() * window.innerWidth);
+let y= Math.floor(Math.random() * window.innerHeight);
+  document.getElementById('d').style.left =x +'px';
+  document.getElementById('d').style.top =y +'px';
+  }
+</script>
+</body>
+</html>

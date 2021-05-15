@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a = parseInt(prompt("Nhập a : "));
+  let b = parseInt(prompt("Nhập b : "));
+  let c = parseInt(prompt("Nhập c : "));
+  let delta = b*b-4*a*c;
+  let x1=(-b+Math.sqrt(delta))/(2*a);
+  let x2=(-b-Math.sqrt(delta))/(2*a);
+  if (a==0&&b==0&&c!=0) alert("vô nghiệm");
+  else if (a==0&&b==0&&c==0) alert("vô số nghiệm");
+else if(a==0&&b!=0) {
+ alert("x =" + -c/b);
+  }
+else if (a!=0) {
+    if (delta<0)alert("vô nghiệm");
+    else if (delta ==0) alert("phương trình có nghiệm kép x1=x2="+-b/(2*a));
+    else alert("x1="+x1 +", x2="+x2);
+  }
+
+
+</script>
 </body>
 </html>
